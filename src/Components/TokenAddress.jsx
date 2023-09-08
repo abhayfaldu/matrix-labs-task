@@ -12,7 +12,6 @@ const TokenAddress = () => {
 	const [isFalseQuery, setIsFalseQuery] = useState(false);
 
 	const url = `https://api.dexscreener.com/latest/dex/tokens/${query}`;
-	console.log(url);
 
 	const getData = async () => {
 		try {
@@ -38,8 +37,6 @@ const TokenAddress = () => {
 	useEffect(() => {
 		getData();
 	}, [query]);
-
-	console.log("data:", data);
 
 	return (
 		<div>
