@@ -1,0 +1,62 @@
+.tokenAddress__data {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+	border: 1px solid red;
+}
+
+.tokenAddress__row {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	gap: 10px;
+	/* border: 1px solid green; */
+}
+
+.baseInfoCard__box,
+.baseTokenCard__box,
+.quoteTokenCard__box,
+.priceCard__box {
+	width: 25%;
+	overflow: hidden;
+	/* border: 1px solid teal; */
+}
+
+.baseInfoCard__box > p,
+.baseTokenCard__box > p,
+.quoteTokenCard__box > p,
+.priceCard__box > p {
+	font-size: 24px;
+	color: teal;
+	font-weight: bold;
+}
+
+.baseInfoCard__box > div,
+.baseTokenCard__box > div,
+.quoteTokenCard__box > div,
+.priceCard__box > div {
+	display: flex;
+}
+
+.baseInfoCard__box > div > p:nth-child(1),
+.baseTokenCard__box > div > p:nth-child(1),
+.quoteTokenCard__box > div > p:nth-child(1),
+.priceCard__box > div > p:nth-child(1) {
+	font-weight: bold;
+	width: 50%;
+}
+
+.baseInfoCard__box > div > p:nth-child(2),
+.baseTokenCard__box > div > p:nth-child(2),
+.quoteTokenCard__box > div > p:nth-child(2),
+.priceCard__box > div > p:nth-child(2) {
+	width: 50%;
+}
+
+.short {
+	max-width: 6ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
